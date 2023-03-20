@@ -1,6 +1,6 @@
 # Bob's Bagels
 
-![](./assets/bagels.jpg)
+![](./assets/bagels.webp)
 
 ## Learning Objectives
 - Design a domain from user stories
