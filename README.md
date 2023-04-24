@@ -8,7 +8,7 @@
 
 ## Set up instructions
 - Fork this repository and clone the forked version to your machine
-- Open the root directory of the project in IntelliJ
+- Open the tdd-bobs-bagels.sln with Visual Studio
 
 ## Exercise Requirements
 
