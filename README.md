@@ -8,7 +8,7 @@
 
 ## Set up instructions
 - Fork this repository and clone the forked version to your machine
-- Open the root directory of the project in IntelliJ
+- Open the project in Visual Studio
 
 ## Exercise Requirements
 
