@@ -18,4 +18,17 @@ public class BasketTests
         bool added2 = basket.add(name, price);
         Assert.That(added2, Is.False);
     }
+
+    [TestCase("Cinnamon Bagel", 40)]
+    public void Test2(string name, int price)
+    {
+        // We test that we can remove a bagel from the basket, to do this, we
+        // must first add a bagel to the basket.
+        Basket basket = new Basket();
+        bool added = basket.add(name, price);
+        bool removed = basket.remove(name);
+
+        Assert.That(removed, Is.True);
+
+    }
 }

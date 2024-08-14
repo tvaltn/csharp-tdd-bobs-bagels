@@ -15,5 +15,10 @@ namespace tdd_bobs_bagels.CSharp.Main
             _items.Add(name, price);
             return true;
         }
+
+        public bool remove(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
