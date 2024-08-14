@@ -33,6 +33,10 @@ As a member of the public,
 So that I can not overfill my small bagel basket
 I'd like to know when my basket is full when I try adding an item beyond my basket capacity.
 
+Here I am assuming that the member of the public just wants to know if the basket is full.
+The thought process would be that the member will first check if the basket is full, with the intention of
+wanting to add an item to the basket, and then adding the item to the basket afterwards if there is space.
+
 | Members                           | Methods              | Scenario                  | Output    |
 |-----------------------------------|----------------------|---------------------------|-----------|
 | `Dictionary<string, int> items`   | `isFull()`           | basket is full            | true      |
