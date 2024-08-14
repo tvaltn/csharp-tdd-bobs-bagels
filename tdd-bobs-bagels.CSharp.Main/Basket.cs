@@ -18,6 +18,7 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public bool remove(string name)
         {
+            if (!_items.ContainsKey(name)) return false;
             _items.Remove(name);
             return true;
         }
