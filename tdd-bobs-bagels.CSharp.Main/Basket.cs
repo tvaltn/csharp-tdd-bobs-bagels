@@ -8,5 +8,9 @@ namespace tdd_bobs_bagels.CSharp.Main
 {
     public class Basket
     {
+        public bool add(string name, int price)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
