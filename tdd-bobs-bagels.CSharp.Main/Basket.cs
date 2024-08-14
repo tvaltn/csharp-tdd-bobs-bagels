@@ -11,6 +11,7 @@ namespace tdd_bobs_bagels.CSharp.Main
         private Dictionary<string, int> _items = new Dictionary<string, int>();
         public bool add(string name, int price)
         {
+            if (_items.ContainsKey(name)) return false;
             _items.Add(name, price);
             return true;
         }
