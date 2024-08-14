@@ -84,5 +84,9 @@ public class BasketTests
         // not added any bagels to the basket.
         bool result = basket.exists("Honey Bagel");
         Assert.That(result, Is.False);
+        // In this case, the bagel does not exist, and the member
+        // will know this when trying to remove an item.
+        bool removed = basket.remove("Honey Bagel");
+        Assert.That(removed, Is.False);
     }
 }
