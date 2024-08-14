@@ -57,7 +57,21 @@ public class BasketTests
         Basket basket = new Basket();
         // As the business manager, we do not need to add any bagels to the basket,
         // we just want to modify the basket capacity
-        int newSize = 5;
         bool result = basket.changeCapacity(5);
+    }
+
+    [Test]
+    public void Test4Extended()
+    {
+        Basket basket = new Basket();
+        // let's do a test where we add 2 bagels, make sure its full
+        // and then increase capacity, and check again
+        basket.add("Honey Bagel", 30);
+        basket.add("Cinnamon Bagel", 40);
+        bool result = basket.isFull();
+        Assert.That(result, Is.True);
+        basket.changeCapacity(5);
+        bool result2 = basket.isFull();
+        Assert.That(result, Is.False);
     }
 }
