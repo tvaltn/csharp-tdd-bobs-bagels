@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace tdd_bobs_bagels.CSharp.Main
 {
@@ -25,7 +26,8 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public bool exists(string v)
         {
-            throw new NotImplementedException();
+            if (_items.ContainsKey(v)) return true;
+            return false;
         }
 
         public bool isFull()
