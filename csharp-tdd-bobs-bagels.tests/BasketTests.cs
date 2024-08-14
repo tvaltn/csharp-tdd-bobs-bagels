@@ -12,5 +12,10 @@ public class BasketTests
         Basket basket = new Basket();
         bool added = basket.add(name, price);
         Assert.That(added, Is.True);
+
+        // We test that we cannot add two of the same bagels
+        // (since we are storing the data in a dictionary)
+        bool added2 = basket.add(name, price);
+        Assert.That(added2, Is.False);
     }
 }
