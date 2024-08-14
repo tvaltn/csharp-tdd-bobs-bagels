@@ -30,5 +30,9 @@ public class BasketTests
 
         Assert.That(removed, Is.True);
 
+        // Try and remove the bagel again, this should not work since it is already
+        // removed
+        bool removed2 = basket.remove(name);
+        Assert.That(removed2, Is.False);
     }
 }
