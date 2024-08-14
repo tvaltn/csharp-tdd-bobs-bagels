@@ -9,6 +9,7 @@ namespace tdd_bobs_bagels.CSharp.Main
     public class Basket
     {
         private Dictionary<string, int> _items = new Dictionary<string, int>();
+        int capacity = 2;
         public bool add(string name, int price)
         {
             if (_items.ContainsKey(name)) return false;
@@ -18,7 +19,7 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public bool isFull()
         {
-            throw new NotImplementedException();
+            return _items.Count >= capacity;
         }
 
         public bool remove(string name)
