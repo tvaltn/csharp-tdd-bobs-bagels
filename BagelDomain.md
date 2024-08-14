@@ -60,6 +60,11 @@ In this user story I am assuming that the member of the public wants to simply k
 does not exist in the basket. **Not** that they want to be in the act of removing an item, and then
 knowing if the item did not exist in the basket.
 
+The other natural option would be to try and remove the bagel, and get feedback
+that the bagel was not removeable, but this requires you to return more than just
+false, as the user story states that they want to explicitly know that they could not remove
+the item, due to it not existing. Thus the exists method makes more sense to me.
+
 | Members                           | Methods              | Scenario                  | Output    |
 |-----------------------------------|----------------------|---------------------------|-----------|
 | `Dictionary<string, int> items`   | `exists(string item)`| item exists in basket     | true      |

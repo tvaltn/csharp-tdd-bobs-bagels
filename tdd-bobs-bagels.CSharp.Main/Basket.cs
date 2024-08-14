@@ -23,6 +23,11 @@ namespace tdd_bobs_bagels.CSharp.Main
             return true;
         }
 
+        public bool exists(string v)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool isFull()
         {
             return _items.Count >= capacity;

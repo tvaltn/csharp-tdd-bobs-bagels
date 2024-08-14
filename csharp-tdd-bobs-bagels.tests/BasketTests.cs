@@ -58,6 +58,7 @@ public class BasketTests
         // As the business manager, we do not need to add any bagels to the basket,
         // we just want to modify the basket capacity
         bool result = basket.changeCapacity(5);
+        Assert.That(result, Is.True);
     }
 
     [Test]
@@ -73,5 +74,15 @@ public class BasketTests
         basket.changeCapacity(5);
         bool result2 = basket.isFull();
         Assert.That(result2, Is.False);
+    }
+
+    [Test]
+    public void Test5()
+    {
+        Basket basket = new Basket();
+        // Here we want to check if the bagel exists, which it should not, as we have
+        // not added any bagels to the basket.
+        bool result = basket.exists("Honey Bagel");
+        Assert.That(result, Is.False);
     }
 }
