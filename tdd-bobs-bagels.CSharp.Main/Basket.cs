@@ -18,7 +18,8 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public bool remove(string name)
         {
-            throw new NotImplementedException();
+            _items.Remove(name);
+            return true;
         }
     }
 }
