@@ -72,6 +72,6 @@ public class BasketTests
         Assert.That(result, Is.True);
         basket.changeCapacity(5);
         bool result2 = basket.isFull();
-        Assert.That(result, Is.False);
+        Assert.That(result2, Is.False);
     }
 }
