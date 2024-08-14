@@ -50,4 +50,14 @@ public class BasketTests
         bool result = basket.isFull();
         Assert.That(result, Is.True);
     }
+
+    [Test]
+    public void Test4()
+    {
+        Basket basket = new Basket();
+        // As the business manager, we do not need to add any bagels to the basket,
+        // we just want to modify the basket capacity
+        int newSize = 5;
+        bool result = basket.changeCapacity(5);
+    }
 }
