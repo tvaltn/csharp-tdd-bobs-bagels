@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using System.Xml.Linq;
 using tdd_bobs_bagels.CSharp.Main;
 
 namespace csharp_tdd_bobs_bagels.tests;
@@ -34,5 +36,18 @@ public class BasketTests
         // removed
         bool removed2 = basket.remove(name);
         Assert.That(removed2, Is.False);
+    }
+
+    [Test]
+    public void Test3()
+    {
+        Basket basket = new Basket();
+        basket.add("Honey Bagel", 30);
+        basket.add("Cinnamon Bagel", 40);
+
+        // Now as a member of the public, I would like to know if the basket is full,
+        // before I try to add another bagel
+        bool result = basket.isFull();
+        Assert.That(result, Is.True);
     }
 }

@@ -16,6 +16,11 @@ namespace tdd_bobs_bagels.CSharp.Main
             return true;
         }
 
+        public bool isFull()
+        {
+            throw new NotImplementedException();
+        }
+
         public bool remove(string name)
         {
             if (!_items.ContainsKey(name)) return false;
