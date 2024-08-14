@@ -19,7 +19,8 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public bool changeCapacity(int v)
         {
-            throw new NotImplementedException();
+            capacity = v;
+            return true;
         }
 
         public bool isFull()
